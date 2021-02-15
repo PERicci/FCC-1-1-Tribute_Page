@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+:root {
+    --w: 85%;
+    --titlesize: 7vw;
+    --shadow-color: #fff388;
+    --shadow-color-light: white;
+    --shadow-color1: #fff38800;
+    --shadow-color-light1: rgba(255, 255, 255, 0);
+}
+
+body {
+    padding: 0;
+    display: block;
+    background-color: #a3a4a5;
+    background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
+    text-align: justify;
+}
+body::after {
+    content: "";
+    background: url(https://pixnio.com/free-images/2017/08/20/2017-08-20-10-00-06-1000x667.jpg) center top no-repeat;
+    background-size: cover;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+#main {
+    margin: auto;
+    border-radius: 1vw;
+    width: var(--w);
+    height: auto;
+    background-color: silver;
+    display: grid;
+    grid-template-columns: 100%;
+    box-shadow: 0px 0px 1vw black;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#img-banner {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+#img {
+    filter: brightness(0);
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 1vw 1vw 0 0;
+    animation: on 2s ease-in forwards;
+}
+
+#title {
+    margin: 0;
+    background-color: black;
+    color: #E9C795;
+    font-family: 'Electrolize', sans-serif;
+    font-size: var(--titlesize);
+}
+
+#light {
+    position: absolute;
+    left: 10.3%;
+    top: 39%;
+    width: 0;
+    height: 0;
+    background-color: rgb(255, 254, 234);
+    z-index: 2;
+    animation: neon 2s ease-in forwards;
+}
+
+@keyframes neon {
+    2% {
+        box-shadow: -1px -1px 1px 1px var(--shadow-color-light), -1px 1px 1px 1px var(--shadow-color-light), 1px -1px 1px 1px var(--shadow-color-light), 1px 1px 1px 1px var(--shadow-color-light),
+        0 0 3px 3px var(--shadow-color-light), 0 0 10px 3px var(--shadow-color-light), 0 0 20px 20px var(--shadow-color-light),
+        0 0 30px 30px var(--shadow-color), 0 0 40px 40px var(--shadow-color), 0 0 50px 50px var(--shadow-color);
+    }
+    6% {
+        box-shadow: -1px -1px 1px 1px var(--shadow-color-light), -1px 1px 1px 1px var(--shadow-color-light), 1px -1px 1px 1px var(--shadow-color-light), 1px 1px 1px 1px var(--shadow-color-light),
+        0 0 5px 5px var(--shadow-color-light), 0 0 15px 15px var(--shadow-color-light), 0 0 25px 25px var(--shadow-color-light),
+        0 0 40px 40px var(--shadow-color), 0 0 50px 50px var(--shadow-color), 0 0 60px 60px var(--shadow-color);
+    }
+    10% {
+        box-shadow: -1px -1px 1px 1px var(--shadow-color-light), -1px 1px 1px 1px var(--shadow-color-light), 1px -1px 1px 1px var(--shadow-color-light), 1px 1px 1px 1px var(--shadow-color-light),
+        0 0 5px 5px var(--shadow-color-light), 0 0 15px 15px var(--shadow-color-light), 0 0 25px 25px var(--shadow-color-light), 0 0 40px 40px var(--shadow-color-light), 0 0 60px 60px var(--shadow-color-light),/*  0 0 150px 150px var(--shadow-color-light), 0 0 400px 400px var(--shadow-color-light), */
+        0 0 40px 40px var(--shadow-color), 0 0 50px 50px var(--shadow-color), 0 0 60px 60px var(--shadow-color);
+    }
+    14% {
+        box-shadow: -1px -1px 1px 1px var(--shadow-color-light1), -1px 1px 1px 1px var(--shadow-color-light1), 1px -1px 1px 1px var(--shadow-color-light1), 1px 1px 1px 1px var(--shadow-color-light1),
+        0 0 5px 5px var(--shadow-color-light), 0 0 15px 15px var(--shadow-color-light1), 0 0 25px 25px var(--shadow-color-light1), 0 0 40px 40px var(--shadow-color-light1), 0 0 60px 60px var(--shadow-color-light1),/*  0 0 150px 150px var(--shadow-color-light1), 0 0 800px 800px var(--shadow-color-light1), */
+        0 0 40px 40px var(--shadow-color1), 0 0 50px 50px var(--shadow-color1), 0 0 60px 60px var(--shadow-color1);
+    }
+    18% {
+        box-shadow: -1px -1px 1px 1px var(--shadow-color-light), -1px 1px 1px 1px var(--shadow-color-light), 1px -1px 1px 1px var(--shadow-color-light), 1px 1px 1px 1px var(--shadow-color-light),
+        0 0 3px 3px var(--shadow-color-light), 0 0 10px 3px var(--shadow-color-light), 0 0 20px 20px var(--shadow-color-light),
+        0 0 30px 30px var(--shadow-color), 0 0 40px 40px var(--shadow-color), 0 0 50px 50px var(--shadow-color);
+    }
+    22% {
+        box-shadow: -1px -1px 1px 1px var(--shadow-color-light), -1px 1px 1px 1px var(--shadow-color-light), 1px -1px 1px 1px var(--shadow-color-light), 1px 1px 1px 1px var(--shadow-color-light),
+        0 0 5px 5px var(--shadow-color-light), 0 0 15px 15px var(--shadow-color-light), 0 0 25px 25px var(--shadow-color-light),
+        0 0 40px 40px var(--shadow-color), 0 0 50px 50px var(--shadow-color), 0 0 60px 60px var(--shadow-color);
+    }
+    26% {
+        box-shadow: -1px -1px 1px 1px var(--shadow-color-light), -1px 1px 1px 1px var(--shadow-color-light), 1px -1px 1px 1px var(--shadow-color-light), 1px 1px 1px 1px var(--shadow-color-light),
+        0 0 5px 5px var(--shadow-color-light), 0 0 15px 15px var(--shadow-color-light), 0 0 25px 25px var(--shadow-color-light), 0 0 40px 40px var(--shadow-color-light), 0 0 60px 60px var(--shadow-color-light),/*  0 0 150px 150px var(--shadow-color-light), 0 0 400px 400px var(--shadow-color-light), */
+        0 0 40px 40px var(--shadow-color), 0 0 50px 50px var(--shadow-color), 0 0 60px 60px var(--shadow-color);
+    }
+    30% {
+        box-shadow: -1px -1px 1px 1px var(--shadow-color-light1), -1px 1px 1px 1px var(--shadow-color-light1), 1px -1px 1px 1px var(--shadow-color-light1), 1px 1px 1px 1px var(--shadow-color-light1),
+        0 0 5px 5px var(--shadow-color-light), 0 0 15px 15px var(--shadow-color-light1), 0 0 25px 25px var(--shadow-color-light1), 0 0 40px 40px var(--shadow-color-light1), 0 0 60px 60px var(--shadow-color-light1),/*  0 0 150px 150px var(--shadow-color-light1), 0 0 800px 800px var(--shadow-color-light1), */
+        0 0 40px 40px var(--shadow-color1), 0 0 50px 50px var(--shadow-color1), 0 0 60px 60px var(--shadow-color1);
+    }
+   50% {
+        box-shadow: -1px -1px 1px 1px var(--shadow-color-light), -1px 1px 1px 1px var(--shadow-color-light), 1px -1px 1px 1px var(--shadow-color-light), 1px 1px 1px 1px var(--shadow-color-light),
+        0 0 3px 3px var(--shadow-color-light), 0 0 10px 3px var(--shadow-color-light), 0 0 20px 20px var(--shadow-color-light),
+        0 0 30px 30px var(--shadow-color), 0 0 40px 40px var(--shadow-color), 0 0 50px 50px var(--shadow-color);
+    }
+    70% {
+        box-shadow: -1px -1px 1px 1px var(--shadow-color-light), -1px 1px 1px 1px var(--shadow-color-light), 1px -1px 1px 1px var(--shadow-color-light), 1px 1px 1px 1px var(--shadow-color-light),
+        0 0 5px 5px var(--shadow-color-light), 0 0 15px 15px var(--shadow-color-light), 0 0 25px 25px var(--shadow-color-light),
+        0 0 40px 40px var(--shadow-color), 0 0 50px 50px var(--shadow-color), 0 0 60px 60px var(--shadow-color);
+    }
+    90% {
+        box-shadow: -1px -1px 1px 1px var(--shadow-color-light), -1px 1px 1px 1px var(--shadow-color-light), 1px -1px 1px 1px var(--shadow-color-light), 1px 1px 1px 1px var(--shadow-color-light),
+        0 0 5px 5px var(--shadow-color-light), 0 0 15px 15px var(--shadow-color-light), 0 0 25px 25px var(--shadow-color-light), 0 0 40px 40px var(--shadow-color-light), 0 0 60px 60px var(--shadow-color-light),/*  0 0 150px 150px var(--shadow-color-light), 0 0 400px 400px var(--shadow-color-light), */
+        0 0 40px 40px var(--shadow-color), 0 0 50px 50px var(--shadow-color), 0 0 60px 60px var(--shadow-color);
+    }
+    100% {
+        box-shadow: -1px -1px 1px 1px var(--shadow-color-light1), -1px 1px 1px 1px var(--shadow-color-light1), 1px -1px 1px 1px var(--shadow-color-light1), 1px 1px 1px 1px var(--shadow-color-light1),
+        0 0 5px 5px var(--shadow-color-light), 0 0 15px 15px var(--shadow-color-light1), 0 0 25px 25px var(--shadow-color-light1), 0 0 40px 40px var(--shadow-color-light1), 0 0 60px 60px var(--shadow-color-light1),/*  0 0 150px 150px var(--shadow-color-light1), 0 0 800px 800px var(--shadow-color-light1), */
+        0 0 40px 40px var(--shadow-color1), 0 0 50px 50px var(--shadow-color1), 0 0 60px 60px var(--shadow-color1);
+    }   
+}
+
+@keyframes on {
+    8% {filter: brightness(50%);}
+    9% {filter: brightness(0%);}
+    16% {filter: brightness(50%);}
+    17% {filter: brightness(0%);}
+    50% {filter: brightness(30%)}
+    100% {filter: brightness(100%);}
+}
