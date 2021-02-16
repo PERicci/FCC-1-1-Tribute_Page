@@ -137,6 +137,7 @@ h2 {
 
 .year {
     color: rgb(0, 0, 0);
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,6 +196,11 @@ h2 {
         object-fit: cover;
         object-position: left;
     }
+
+    #img-caption {
+        font-size: 0.9rem;
+    }
+
     #light {
         left: 68px;
         top: 125px;
