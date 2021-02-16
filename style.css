@@ -2,7 +2,7 @@
 :root {
     --w: 85%;
     --titlesize: 7vw;
-    --shadow-color: #fff388;
+    --shadow-color: #ece288;
     --shadow-color-light: white;
     --shadow-color1: #fff38800;
     --shadow-color-light1: rgba(255, 255, 255, 0);
@@ -12,7 +12,7 @@ body {
     filter: brightness(0);
     padding: 0;
     display: block;
-    background-color: #515d69;
+    background-color: #869099;
     background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
     text-align: justify;
     animation: on 2s ease-in forwards;
@@ -61,11 +61,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #525252;
-    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
-    color: #e6d0b0;
+    background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
+    color: #d6b98d;
     font-family: 'Electrolize', sans-serif;
     font-size: var(--titlesize);
-    text-shadow: 0px 0px 0.5vw black;
+    text-shadow: 0 0 0.3vw white, 0 0 1vw black;
 }
 
 #light {
