@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 :root {
-    --w: 85%;
-    --titlesize: 7vw;
+    --w: 75%;
+    --titlesize: 4rem;
+    --imgsize: var(--w);
     --shadow-color: #ece288;
     --shadow-color-light: white;
     --shadow-color1: #fff38800;
     --shadow-color-light1: rgba(255, 255, 255, 0);
+    font-size: 1.6vw;
 }
+
+ul {list-style: none; padding: 0;}
+a {color: #ffe0b0;}
 
 body {
     filter: brightness(0);
@@ -14,7 +19,6 @@ body {
     display: block;
     background-color: #869099;
     background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
-    text-align: justify;
     animation: on 2s ease-in forwards;
     font-family: 'Electrolize', sans-serif;
 }
@@ -29,14 +33,18 @@ body {
     display: grid;
     grid-template-columns: 100%;
     justify-content: center;
-    text-align: center;
-    box-shadow: 0 0 0.3vw rgba(255, 255, 255, 0.664), 0 0 1vw black;
+    box-shadow: 0 0 0.2vw rgba(255, 255, 255, 0.664), 0 0 1vw black;
 }
 
+/* BANNER AND TITLE */
+
 #banner {
+    border-radius: 1vw 1vw 0 0;
     position: relative;
     width: 100%;
     text-align: center;
+    box-shadow: 0 0 0.2vw white, 0 0 1vw black;
+    margin-bottom: 0.5rem;
 }
 
 #tesla-banner {
@@ -68,7 +76,7 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
     color: #ffe0b0;
     font-size: var(--titlesize);
-    text-shadow: 0 0 0.3vw white, 0 0 1vw black;
+    text-shadow: 0 0 0.2vw white, 0 0 1vw black;
 }
 
 #light {
@@ -82,19 +90,86 @@ body {
     animation: neon 2s ease-in forwards;
 }
 
+/* FIRST IMAGE AND CAPTION */
+
 #img-div {
-    width: calc(var(--w) - 20vw);
+    width: var(--imgsize);
     height: auto;
     margin: 1vw auto 0;
     padding: 0;
 }
 
 #image {
-    box-shadow: 0 0 0.3vw white, 0 0 1vw black;
     margin: 0 auto 0.5vw;
-    border-radius: 1vw;
-    width: 100%;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    width: var(--imgsize);
     height: auto;
+    border-radius: 1vw;
+    box-shadow: 0 0 0.2vw white, 0 0 1vw black;
+}
+
+#img-caption {
+    font-size: 0.8rem;
+    text-align: justify;
+    color: rgb(46, 46, 46);
+}
+
+/* TRIBUTE INFO */
+
+h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.5);
+    box-shadow: 0 0 0.3vw rgba(211, 211, 211), 0 0 1vw black;
+    margin: 1rem 0rem;
+    padding: 0.5rem;
+}
+
+#timeline {
+    margin: auto;
+    text-align: center;
+    width: var(--w);
+}
+
+.year {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.year::before, .year::after {
+      content: '';
+      display: block;
+      height: 0.1em;
+      min-width: 15rem;
+}
+    
+.year::before {
+      background: linear-gradient(to right, rgba(0,0,0,0), #000);
+      margin-right: 2rem;
+}
+    
+.year::after {
+      background: linear-gradient(to left, rgba(0,0,0,0), #000);
+      margin-left: 2rem;
+}
+
+.description {
+    text-align: justify;
+}
+
+/* MORE */
+
+#more {
+    text-align: center;
+    margin: auto 0;
+    padding: 1rem 0;
+    background-color: #525252;
+    background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
+    font-size: 2rem;
+    border-radius: 0 0 1vw 1vw;
+    text-shadow: 0 0 0.2vw white, 0 0 1vw black;
 }
 
 /* ANIMATIONS */
