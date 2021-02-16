@@ -16,6 +16,7 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
     text-align: justify;
     animation: on 2s ease-in forwards;
+    font-family: 'Electrolize', sans-serif;
 }
 
 #main {
@@ -23,9 +24,12 @@ body {
     border-radius: 1vw;
     width: var(--w);
     height: auto;
-    background-color: silver;
+    background-color: #fffceb;
+    background-image: url("https://www.transparenttextures.com/patterns/pw-pattern.png");
     display: grid;
     grid-template-columns: 100%;
+    justify-content: center;
+    text-align: center;
     box-shadow: 0px 0px 1vw black;
 }
 
@@ -62,8 +66,7 @@ body {
     padding: 0;
     background-color: #525252;
     background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
-    color: #d6b98d;
-    font-family: 'Electrolize', sans-serif;
+    color: #ffe0b0;
     font-size: var(--titlesize);
     text-shadow: 0 0 0.3vw white, 0 0 1vw black;
 }
@@ -77,6 +80,21 @@ body {
     background-color: rgb(255, 254, 234);
     z-index: 2;
     animation: neon 2s ease-in forwards;
+}
+
+#img-div {
+    width: calc(var(--w) - 20vw);
+    height: auto;
+    margin: 1vw auto 0;
+    padding: 0;
+}
+
+#image {
+    box-shadow: 0 0 0.3vw white, 0 0 1vw black;
+    margin: 0 auto 0.5vw;
+    border-radius: 1vw;
+    width: 100%;
+    height: auto;
 }
 
 /* ANIMATIONS */
