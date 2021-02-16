@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 :root {
+    --bannerheight: auto;
+    --bannerwidth: 100%;
+    --base: 10px;
+    --sizeincrement: 1vw;
     --w: 75%;
-    --titlesize: 4rem;
     --imgsize: var(--w);
     --shadow-color: #ece288;
     --shadow-color-light: white;
     --shadow-color1: #fff38800;
     --shadow-color-light1: rgba(255, 255, 255, 0);
-    font-size: 1.6vw;
+    font-size: calc(var(--base) + var(--sizeincrement));
 }
 
-ul {list-style: none; padding: 0;}
+ul {list-style: none; padding: 0; margin: 0;}
 a {color: #ffe0b0;}
 
 body {
@@ -48,8 +51,8 @@ body {
 }
 
 #tesla-banner {
-    width: 100%;
-    height: auto;
+    width: var(--bannerwidth);
+    height: var(--bannerheight);
     position: absolute;
     right: 0;
     top: 0;
@@ -64,8 +67,8 @@ body {
 
 #img {
     margin: 0;
-    width: 100%;
-    height: auto;
+    width: var(--bannerwidth);
+    height: var(--bannerheight);
     border-radius: 1vw 1vw 0 0;
 }
 
@@ -75,7 +78,7 @@ body {
     background-color: #525252;
     background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
     color: #ffe0b0;
-    font-size: var(--titlesize);
+    font-size: 4rem;
     text-shadow: 0 0 0.2vw white, 0 0 1vw black;
 }
 
@@ -121,13 +124,13 @@ h2 {
     font-size: 1.3rem;
     text-align: center;
     background-color: rgba(211, 211, 211, 0.5);
-    box-shadow: 0 0 0.3vw rgba(211, 211, 211), 0 0 1vw black;
-    margin: 1rem 0rem;
+    margin-top: 1rem;
     padding: 0.5rem;
+    box-shadow: 0 0 0.3vw rgba(211, 211, 211), 0 0 1vw black;
 }
 
 #timeline {
-    margin: auto;
+    margin: -1rem auto 2rem;
     text-align: center;
     width: var(--w);
 }
@@ -142,7 +145,7 @@ h2 {
       content: '';
       display: block;
       height: 0.1em;
-      min-width: 15rem;
+      width: 15rem;
 }
     
 .year::before {
@@ -156,6 +159,8 @@ h2 {
 }
 
 .description {
+    margin-top: -1rem   ;
+    line-height: 1.5rem;
     text-align: justify;
 }
 
@@ -170,6 +175,30 @@ h2 {
     font-size: 2rem;
     border-radius: 0 0 1vw 1vw;
     text-shadow: 0 0 0.2vw white, 0 0 1vw black;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 700px) {
+    :root {
+        --bannerheight: 250px;
+        --base: 18px;
+        --sizeincrement: 0px;
+        --w: 98%;
+        --imgsize: 90%;  
+    }
+    #tesla-banner {
+        object-fit: cover;
+        object-position: right;
+    }
+    #img {
+        object-fit: cover;
+        object-position: left;
+    }
+    #light {
+        left: 68px;
+        top: 125px;
+    }
 }
 
 /* ANIMATIONS */
