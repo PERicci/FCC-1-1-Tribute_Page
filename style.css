@@ -188,6 +188,11 @@ h2 {
         --w: 98%;
         --imgsize: 90%;  
     }
+
+    #title {
+        font-size: 3rem;
+    }
+
     #tesla-banner {
         object-fit: cover;
         object-position: right;
