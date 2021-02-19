@@ -72,6 +72,11 @@ body {
     border-radius: 1vw 1vw 0 0;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 #title {
     margin: 0;
     padding: 0;
@@ -200,11 +205,6 @@ h2 {
     #img {
         object-fit: cover;
         object-position: left;
-    }
-
-    img {
-        max-width: 100%;
-        display: block;
     }
 
     #img-caption {
