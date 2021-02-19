@@ -202,6 +202,11 @@ h2 {
         object-position: left;
     }
 
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
     #img-caption {
         font-size: 0.9rem;
     }
